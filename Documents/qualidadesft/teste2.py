@@ -1,1 +1,1 @@
-Nome = "Teste
+print("Olá, Mundo!")
