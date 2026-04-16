@@ -1,18 +1,15 @@
-"""Módulo de validação de qualidade de software para o projeto Pylint."""
+"""Módulo principal para testar a aprovação no pipeline do GitHub Actions."""
 
-def calcular_soma(primeiro_valor, segundo_valor):
+def saudacao_personalizada(nome, idade):
     """
-    Realiza a soma de dois números e retorna o resultado.
-    
+    Gera e exibe uma mensagem de saudação validada pelo Pylint.
+
     Args:
-        primeiro_valor (int/float): O primeiro número.
-        segundo_valor (int/float): O segundo número.
+        nome (str): O nome do usuário.
+        idade (int): A idade do usuário.
     """
-    return primeiro_valor + segundo_valor
+    mensagem = f"Olá, {nome}! Você tem {idade} anos. Código validado com sucesso!"
+    print(mensagem)
 
 if __name__ == "__main__":
-    RESULTADO_SOMA = calcular_soma(15, 25)
-    print(f"A soma dos valores é: {RESULTADO_SOMA}")
-
-
-        
+    saudacao_personalizada("Dev", 25)
